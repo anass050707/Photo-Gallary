@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Photo Gallery</h1>
+
+   
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <!-- The Gallery -->
+    <div class="gallery">
+        <!-- Notice the onmouseover and onmouseout attributes passing 'this' (the image itself) -->
+        <img src="https://picsum.photos/id/1015/200/150" alt="Beautiful Mountain River" onmouseover="upDate(this)" onmouseout="undo()">
+        <img src="https://picsum.photos/id/1016/200/150" alt="Canyon Landscape" onmouseover="upDate(this)" onmouseout="undo()">
+        <img src="https://picsum.photos/id/1018/200/150" alt="Snowy Mountains" onmouseover="upDate(this)" onmouseout="undo()">
+        <img src="https://picsum.photos/id/1019/200/150" alt="Forest Trees" onmouseover="upDate(this)" onmouseout="undo()">
+    </div>
+
+    <!-- Link to your JavaScript file (placed at the bottom so the HTML loads first) -->
+    <script src="script.js"></script>
+</body>
+</html>
